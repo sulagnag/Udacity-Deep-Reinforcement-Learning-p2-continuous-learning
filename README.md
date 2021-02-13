@@ -1,20 +1,6 @@
 # Udacity-Deep-Reinforcement-Learning-p2-continuous-learning
 DDPG implementation for continuous action space
 
-## The Problem - Project Goal
-
-1. In this environment, a double-jointed arm can move to target locations. 
-2. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the target location for as many time steps as possible.
-3. The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. 
-4. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
-
-## The solution
-1. I decided to go with the [DDPG algorithm](https://arxiv.org/pdf/1509.02971.pdf). 
-2. The Actor and Critc networks are almost identical and simple - with linear layers followed by RELU Activation layers.
-3. A finite sized cache called the replay buffer has been used to store <s,a,r,s'> pairs. Pairs from this buffer are used to train the actor and the critic.
-4. The concept of soft updates has been used for both actor and critic networks where a copy of the networks is used for evaluation and updated at regular intervals with the weights from the target network being trained.
-5. Exploration (which is a major challenge in continuous actions spaces) by adding noise to the action spaces is done by using an Ornstein-Uhlenbeck process.
-
 ## Environment details
 
 The environment is based on [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents). 
