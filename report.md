@@ -27,7 +27,7 @@ I first setup the network as mentioned in the paper for both the Actor and Criti
 6. Critic outputs the Q value for a state, action pair
 7. Adam optimiser for both networks
 8. A replay buffer of size 100000. As the buffer gets full, old entries are replaced.
-9. Discount factor 0.99
+9. Discount factor or Gamma = 0.99
 
 ### Hyperparamters
 1. Learning rate for both networks = 0.001
