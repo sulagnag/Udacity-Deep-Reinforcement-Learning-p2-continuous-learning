@@ -35,8 +35,7 @@ I first setup the network as mentioned in the paper for both the Actor and Criti
 3. Weight decay for Critic = 0
 4. Batch size - 128
 
-### Plot 
-Below is the plot that shows how the agents trainied.
+### Plot - Below is the plot that shows how the agents trainied.
 ![](images/ddpg_plot.png)
 
 ### Future Work - ideas
