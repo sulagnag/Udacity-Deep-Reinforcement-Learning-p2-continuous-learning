@@ -31,7 +31,7 @@ I first setup the network as mentioned in the paper for both the Actor and Criti
 
 ### Hyperparamters
 1. Learning rate for both networks = 0.001
-2. Tau for soft updates = 0.05
+2. Tau for soft updates = 0.001
 3. Weight decay for Critic = 0
 4. Batch size - 128
 
@@ -40,5 +40,5 @@ I first setup the network as mentioned in the paper for both the Actor and Criti
 
 ### Future Work - ideas
 1. Implement the D4PG, A3C algorithm and compare with this DDPG performance
-2. Imlement a prioritised Replay buffer 
+2. Implement a prioritised Replay buffer 
 3. Further tweak the network parameters for faster training and a higher target score.
