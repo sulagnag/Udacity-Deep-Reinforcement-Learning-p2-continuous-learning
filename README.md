@@ -1,20 +1,25 @@
 # Udacity-Deep-Reinforcement-Learning-p2-continuous-learning
 DDPG implementation for continuous action space
 
-## Environment details
+## The Problem Description
 
-The environment is based on [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents). 
+**The Environment:** In this environment, a double-jointed arm can move to target locations. The environment is based on [Unity ML-agents](https://github.com/Unity-Technologies/ml-agents). 
 
-**Note:** The Unity ML-Agent team frequently releases updated versions of their environment. We are using the v0.4 interface. The project environment provided by Udacity is similar to, but not identical to the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment on the Unity ML-Agents GitHub page.
+**Note:** The Unity ML-Agent team frequently releases updated versions of their environment. This project uses v0.4 interface. The project environment provided by Udacity is similar to, but not identical to the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment on the Unity ML-Agents GitHub page.
 
 For this project, Udacity provides two separate versions of the Unity environment:
 - The first version contains a single agent.
 - The second version contains 20 identical agents, each with its own copy of the environment.
 
+**The observation space:** The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm.
 
-### Solving the environment
+**The action space:** Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 
-I have decided to go with the second version. 
+**Rewards:**  A reward of +0.1 is provided for each step that the agent's hand is in the goal location
+
+**Task (Episodic/Continuous)**: The task is continuos, so we use a limit of max timesteps for each episode.
+
+**Solution:**  I have decided to go with the second version. 
 **The agents thus need to be trained so they get an average score of +30 (over 100 consecutive episodes, and over all agents)**
 
 
